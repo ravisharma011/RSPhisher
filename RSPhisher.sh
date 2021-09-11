@@ -69,7 +69,7 @@ banner() {
 ║╔╗╔╝╚══╗║║╔══╝║╔╗║╠╣║══╣║╔╗║║║═╣║╔╝
 ║║║╚╗║╚═╝║║║░░░║║║║║║╠══║║║║║║║═╣║║░
 ╚╝╚═╝╚═══╝╚╝░░░╚╝╚╝╚╝╚══╝╚╝╚╝╚══╝╚╝░
-
+By- RAVI SHARMA
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Ravi Sharma ${WHITE}
 	EOF
@@ -83,7 +83,7 @@ banner_small() {
 ║╚═╝║║╚══╗║╚═╝║║╚═╗╔╗╔══╗║╚═╗╔══╗╔═╗
 ║╔╗╔╝╚══╗║║╔══╝║╔╗║╠╣║══╣║╔╗║║║═╣║╔╝
 ║║║╚╗║╚═╝║║║░░░║║║║║║╠══║║║║║║║═╣║║░
-╚╝╚═╝╚═══╝╚╝░░░╚╝╚╝╚╝╚══╝╚╝╚╝╚══╝╚╝░
+╚╝╚═╝╚═══╝╚╝░░░╚╝╚╝╚╝╚══╝╚╝╚╝╚══╝╚╝░ BY_ RAVI SHARMA
 ${WHITE} 1.0
 	EOF
 }
@@ -259,7 +259,7 @@ start_ngrok() {
 	echo -ne "\n\n${RED}[${WHITE}-${RED}]${GREEN} Launching Ngrok..."
 
     if [[ `command -v termux-chroot` ]]; then
-        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 & # Thanks
+        sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
     else
         sleep 2 && ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
     fi
