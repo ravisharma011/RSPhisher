@@ -1,8 +1,8 @@
 FROM debian:10
-LABEL MAINTAINER="https://github.com/htr-tech/zphisher"
+LABEL MAINTAINER="https://github.com/htr-tech/RSPhisher"
 
-WORKDIR zphisher/
-ADD . /zphisher
+WORKDIR RSPhisher/
+ADD . /RSPhisher
 
 RUN apt-get update
 RUN apt-get install -y curl
@@ -11,4 +11,4 @@ RUN apt-get install -y unzip
 RUN apt-get clean
 RUN apt-get install -y wget
 
-CMD ["./zphisher.sh"]
+CMD ["./RSPhisher.sh"]
